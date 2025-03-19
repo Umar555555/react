@@ -42,7 +42,7 @@ function User(){
                         <button onClick={restart} className="btn btn-warning">Restart</button><br />
                         <button onClick={showModal} className='btn btn-outline-secondary mt-2'>Show modal</button>
                     </div>
-                    {istrue && <div className='fixed-top modal_container'>
+                    {istrue && <div onClick={hideModal} className='fixed-top modal_container'>
                         <div className="modal_block">
                             <button className='close-btn' onClick={hideModal}><div className="close">×</div></button>
                             <h1 className='modal-title'>Lorem ipsum amet consectetur.</h1>
